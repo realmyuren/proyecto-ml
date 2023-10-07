@@ -1,3 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
 .sidebar {
     width: 60px;
     height: 100%;
@@ -11,32 +23,100 @@
 .sidebar:hover {
     width: 200px;
 }
+
 .sidebar:hover > .item> .text {
     opacity: 1;
 }
 
-hr {
-    height: 1px;
-    color: #919191;
-    margin: 15px 0;
-}
-.item {
+.center-container {
+    flex: 1;
     display: flex;
     align-items: center;
-    margin: 20px 0;
-
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.item .icon {
-    width: 40px;
-    height: 35px;
-    flex-shrink: 0;
-    fill: #424242;
+#profile {
+    text-align: center;
 }
-.item .text {
-    opacity: 0;
-    transition: ease-in-out 0.3s;
-    transition-delay: .2s;
-    margin-left: 15px;
-    white-space:  nowrap;
+
+#profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#profile-buttons {
+    margin-top: 10px;
+}
+
+.follow-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.message-button, .add-button {
+    background-color: #ccc;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+#categories-top {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.category-item {
+  text-align: center;
+}
+
+#categories-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.category-item-bottom {
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.category-item-bottom.active {
+  border-bottom: 2px solid #007BFF;
+}
+
+#image-gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.gallery-image {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.gallery-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }

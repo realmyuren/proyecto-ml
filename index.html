@@ -10,6 +10,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
         }
 
         .sidebar {
@@ -18,7 +26,11 @@
             height: 100vh;
             padding: 20px;
             box-sizing: border-box;
-            float: left;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .sidebar:hover {
+            width: 200px;
         }
 
         .item {
@@ -42,35 +54,150 @@
             border: 0;
             border-top: 1px solid #ccc;
         }
+
+        #profile-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: left 0.3s ease-in-out;
+        }
+
+        #profile {
+            text-align: center;
+        }
+
+        #profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        #profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        #profile-buttons {
+            margin-top: 10px;
+        }
+
+        #categories-top {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .category-item {
+            text-align: center;
+        }
+
+        #categories-bottom {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .category-item-bottom {
+            text-align: center;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+        }
+
+        .category-item-bottom.active {
+            border-bottom: 2px solid #007BFF;
+        }
+
+        #image-gallery {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .gallery-image {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .gallery-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="item">
-            <img class="icon" src="/icon1" alt="Icon 1">
-            <div class="text">Home</div>
-        </div>
-        <hr />
-        <div class="item">
-            <img class="icon" src="/icon2" alt="Icon 2">
-            <div class="text">Search</div>
-        </div>
-        <hr />
-        <div class="item">
-            <img class="icon" src="/icon3" alt="Icon 3">
-            <div class="text">Explore</div>
-        </div>
-        <hr />
-        <div class="item">
-            <img class="icon" src="/icon4" alt="Icon 4">
-            <div class="text">Reels</div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="item">
+                <img class="icon" src="/proyecto-ml/images/home-icon.png" alt="Icon 1">
+                <div class="text">Home</div>
+            </div>
+            <hr />
+            <div class="item">
+                <img class="icon" src="/proyecto-ml/images/lups-icon.png" alt="Icon 2">
+                <div class="text">Search</div>
+            </div>
+            <hr />
+            <div class="item">
+                <img class="icon" src="/proyecto-ml/images/explore-icon.png" alt="Icon 3">
+                <div class="text">Explore</div>
+            </div>
+            <hr />
+            <div class="item">
+                <img class="icon" src="/proyecto-ml/images/play-icon.png" alt="Icon 4">
+                <div class="text">Reels</div>
+            </div>
+            <hr />
+
+            <div class="item">
+                <img class="icon" src="/proyecto-ml/images/send-icon.png" alt="Icon 4">
+                <div class="text">Message</div>
+            </div>
+            <hr />
+
+            <div class="item">
+                <img class="icon" src="/proyecto-ml/images/heart-icon.png" alt="Icon 4">
+                <div class="text">Notifications</div>
+            </div>
+            <hr />
+
+            <div class="item">
+                <img class="icon" src="/proyecto-ml/images/plus-icon.png" alt="Icon 4">
+                <div class="text">Create</div>
+            </div>
+            <hr />
+            <div class="item">
+                <img class="icon" src="/proyecto-ml/images/profile-icon.png" alt="Icon 4">
+                <div class="text">Profile</div>
+            </div>
+            <hr />
         </div>
 
-        <div class="item">
-            <img class="icon" src="/icon4" alt="Icon 4">
-            <div class="text">Reels</div>
+        <div id="profile-container">
+            <div id="profile">
+                <img id="profile-image" src="ruta_de_la_imagen.jpg" alt="Imagen de perfil">
+                <div id="profile-name">Nombre</div>
+                <div id="profile-buttons">
+                    <button class="follow-button">Follow</button>
+                    <button class="message-button">Messages</button>
+                    <button class="add-button">Add</button>
+                </div>
+            </div>
         </div>
-        
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
