@@ -4,37 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Mercado Libre Clon</title>
+    <title>Paul Banks (@bankspaulbanks)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #f0f0f0;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .text {
+            font-size: 16px;
+        }
+
+        hr {
+            margin: 15px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
-   <!-- Encabezado con botones -->
-   <header>
-    <!-- Botones de ingresar usuario y contraseña -->
-    <div class="login-buttons">
-        <button>Ingresar</button>
-        <button>Usuario</button>
-    </div>
+    <div class="sidebar">
+        <div class="item">
+            <img class="icon" src="/icon1" alt="Icon 1">
+            <div class="text">Home</div>
+        </div>
+        <hr />
+        <div class="item">
+            <img class="icon" src="/icon2" alt="Icon 2">
+            <div class="text">Search</div>
+        </div>
+        <hr />
+        <div class="item">
+            <img class="icon" src="/icon3" alt="Icon 3">
+            <div class="text">Explore</div>
+        </div>
+        <hr />
+        <div class="item">
+            <img class="icon" src="/icon4" alt="Icon 4">
+            <div class="text">Reels</div>
+        </div>
 
-    <!-- Botones de categorías -->
-    <div class="category-buttons">
-        <button>Categoría</button>
-        <button>Ofertas</button>
-        <button>Historial</button>
-        <button>Promociones</button>
+        <div class="item">
+            <img class="icon" src="/icon4" alt="Icon 4">
+            <div class="text">Reels</div>
+        </div>
+        
     </div>
-
-    <!-- Botones centrales -->
-    <div class="header-buttons">
-        <button>Categoría</button>
-        <button>Ofertas</button>
-        <button>Historial</button>
-        <button>Promociones</button>
-    </div>
-</header>
-
-<!-- Contenido de la página -->
-<div>
-    <!-- Tu contenido va aquí -->
-</div>
 </body>
 </html>
