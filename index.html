@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Paul Banks (@bankspaulbanks)</title>
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -71,12 +72,15 @@
 
         #profile {
             text-align: center;
+            display: flex;
+            align-items: center;
         }
 
         #profile-image {
             width: 150px;
             height: 150px;
             border-radius: 50%;
+            margin-right: 20px; /* Espacio entre la imagen y los botones */
         }
 
         #profile-name {
@@ -87,6 +91,10 @@
 
         #profile-buttons {
             margin-top: 10px;
+        }
+
+        #profile-buttons button {
+            margin-top: 10px; /* Agrega espacio entre los botones */
         }
 
         #categories-top {
@@ -187,7 +195,7 @@
 
         <div id="profile-container">
             <div id="profile">
-                <img id="profile-image" src="proyecto-ml/images/pal-profile.jpg" alt="Imagen de perfil">
+                <img id="profile-image" src="/proyecto-ml/images/pal-profile-adj.jpg" alt="Imagen de perfil">
                 <div id="profile-name">Paul Banks</div>
                 <div id="profile-buttons">
                     <button class="follow-button">Follow</button>

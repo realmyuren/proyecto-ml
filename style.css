@@ -120,3 +120,13 @@ body {
   height: auto;
   border-radius: 5px;
 }
+
+#profile {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+#profile-image {
+    margin-right: 10px; /* Agrega un margen a la derecha de la imagen */
+}
+
