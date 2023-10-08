@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Paul Banks (@bankspaulbanks)</title>
-    
+    <section>
+       <img src="proyecto-ml/images/pal-profile-adj.jpg" alt="phot1">
+    </section>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -75,137 +77,67 @@
             display: flex;
             align-items: center;
         }
-
-        #profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-right: 20px; /* Espacio entre la imagen y los botones */
-        }
-
-        #profile-name {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        #profile-buttons {
-            margin-top: 10px;
-        }
-
-        #profile-buttons button {
-            margin-top: 10px; /* Agrega espacio entre los botones */
-        }
-
-        #categories-top {
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-        }
-
-        .category-item {
-            text-align: center;
-        }
-
-        #categories-bottom {
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-        }
-
-        .category-item-bottom {
-            text-align: center;
-            cursor: pointer;
-            border-bottom: 2px solid transparent;
-        }
-
-        .category-item-bottom.active {
-            border-bottom: 2px solid #007BFF;
-        }
-
-        #image-gallery {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            width: 100%;
-        }
-
-        .gallery-image {
-            width: 30%;
-            margin-bottom: 20px;
-        }
-
-        .gallery-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="item">
+            <a href="https://www.instagram.com/"
+            <span class="item">
                 <img class="icon" src="/proyecto-ml/images/home-icon.png" alt="Icon 1">
                 <div class="text">Home</div>
-            </div>
+            </span>
+        </a>
             <hr />
-            <div class="item">
+            
+            <span class="item">
                 <img class="icon" src="/proyecto-ml/images/lups-icon.png" alt="Icon 2">
                 <div class="text">Search</div>
-            </div>
+            </span>
             <hr />
-            <div class="item">
+            <a href="https://www.instagram.com/explore/"
+            <span class="item">
                 <img class="icon" src="/proyecto-ml/images/explore-icon.png" alt="Icon 3">
                 <div class="text">Explore</div>
-            </div>
+            </span>
+        </a>
             <hr />
-            <div class="item">
+            <span class="item">
                 <img class="icon" src="/proyecto-ml/images/play-icon.png" alt="Icon 4">
                 <div class="text">Reels</div>
-            </div>
+            </span>
             <hr />
 
-            <div class="item">
+            <span class="item">
                 <img class="icon" src="/proyecto-ml/images/send-icon.png" alt="Icon 4">
                 <div class="text">Message</div>
-            </div>
+            </span>
             <hr />
 
-            <div class="item">
+            <span class="item">
                 <img class="icon" src="/proyecto-ml/images/heart-icon.png" alt="Icon 4">
                 <div class="text">Notifications</div>
-            </div>
+            </span>
             <hr />
 
-            <div class="item">
+            <span class="item">
                 <img class="icon" src="/proyecto-ml/images/plus-icon.png" alt="Icon 4">
                 <div class="text">Create</div>
-            </div>
+            </span>
             <hr />
-            <div class="item">
+            <span class="item"> 
                 <img class="icon" src="/proyecto-ml/images/profile-icon.png" alt="Icon 4">
-                <div class="text">Profile</div>
-            </div>
+                <div class="text">Profile</div> 
+            </span>
             <hr />
         </div>
 
-        <div id="profile-container">
-            <div id="profile">
-                <img id="profile-image" src="/proyecto-ml/images/pal-profile-adj.jpg" alt="Imagen de perfil">
-                <div id="profile-name">Paul Banks</div>
-                <div id="profile-buttons">
-                    <button class="follow-button">Follow</button>
-                    <button class="message-button">Messages</button>
-                    <button class="add-button">Add</button>
-                </div>
+        
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+ 
+    
 </body>
 </html>
